@@ -1,6 +1,5 @@
 import React from 'react';
 import { Cloud, Sun, Wind, Droplets } from 'lucide-react';
-
 const weatherData = {
   current: {
     temp: 22,
@@ -14,7 +13,6 @@ const weatherData = {
     { day: 'Thursday', high: 21, low: 16, condition: 'Rain' },
   ],
 };
-
 const Weather = () => {
   return (
     <div className="py-12 animate-fade-in">
@@ -26,7 +24,6 @@ const Weather = () => {
           Stay updated with real-time weather conditions and forecasts
         </p>
       </div>
-
       <div className="card mb-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center mb-6 md:mb-0">
@@ -54,7 +51,6 @@ const Weather = () => {
           </div>
         </div>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {weatherData.forecast.map((day, index) => (
           <div key={index} className="card">
@@ -73,5 +69,4 @@ const Weather = () => {
     </div>
   );
 };
-
 export default Weather;

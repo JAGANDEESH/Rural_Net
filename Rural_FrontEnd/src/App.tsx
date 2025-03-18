@@ -7,7 +7,7 @@ import Updates from './pages/Updates';
 import Weather from './pages/Weather';
 import Events from './pages/Events';
 import Login from './pages/Login';
-
+import GetStarted from './pages/GetStarted';
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
             <Route path="/weather" element={<Weather />} />
             <Route path="/events" element={<Events />} />
             <Route path="/login" element={<Login />} />
+            <Route path='/get-started' element={<GetStarted/>}/>
           </Routes>
         </main>
       </div>
